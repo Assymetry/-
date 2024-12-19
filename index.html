@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин чехлов ДОЯ</title>
+  <style>
+    /* Общие стили */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Заголовок */
+    header {
+      background-color: #b03838;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    /* Меню */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      color: white;
+      padding: 0.5rem 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #4caf50;
+    }
+
+    /* Баннер */
+    .banner {
+      background: url('https://thumbs.dreamstime.com/b/%D1%80%D0%BE%D0%B6%D0%B4%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F-%D0%BF%D1%80%D0%B0%D0%B7%D0%B4%D0%BD%D0%B8%D1%87%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0-%D0%B1%D0%B0%D0%BD%D0%BD%D0%B5%D1%80%D0%BE%D0%B2-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-%D0%B0%D0%BA%D1%86%D0%B8%D1%8F-xmas-231475285.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    /* Основной контент */
+    main {
+      padding: 1rem;
+    }
+
+    /* Карточка продукта */
+    .product-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-card .product-info {
+      padding: 1rem;
+    }
+
+    .product-card .product-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-card .product-price {
+      color: #4caf50;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .product-card button {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .product-card button:hover {
+      background-color: #45a049;
+    }
+
+    /* Секция "О нас" */
+    .about {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 2rem;
+    }
+
+    .about h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .about p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    /* Кнопка "Наверх" */
+    .back-to-top {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      background-color: #4caf50;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      display: none;
+    }
+
+    .back-to-top.show {
+      display: block;
+    }
+
+    /* Футер */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Заголовок -->
+  <header>
+    Магазин чехлов ДОЯ
+  </header>
+
+  <!-- Меню навигации -->
+  <nav>
+    <a href="#">Каталог</a>
+    <a href="#">О нас</a>
+    <a href="#">Контакты</a>
+  </nav>
+
+  <!-- Баннер -->
+  <section class="banner">
+    Скидки до 50% на лучшие чехлы!
+  </section>
+
+  <!-- Основной контент -->
+  <main>
+    <!-- Продукты -->
+    <div class="product-card">
+      <img src="https://satelonline.kz/upload/iblock/306/q1paa5uoqwm5rob1om6v6zxecc4oete7.jpg" alt="Чехол 1">
+      <div class="product-info">
+        <div class="product-name">Чехол для iPhone 13</div>
+        <div class="product-price">899 тг</div>
+        <button>Добавить в корзину</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://resources.cdn-kaspi.kz/img/m/p/h17/h98/86495532875806.jpg?format=gallery-large" alt="Чехол 2">
+      <div class="product-info">
+        <div class="product-name">Чехол Samsung Galaxy</div>
+        <div class="product-price">799 тг</div>
+        <button>Добавить в корзину</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://main-cdn.sbermegamarket.ru/big1/hlr-system/-48/966/558/312/262/41/600014997618b0.jpeg" alt="Чехол 3">
+      <div class="product-info">
+        <div class="product-name">Чехол с принтом для iPhone 15</div>
+        <div class="product-price">999 тг</div>
+        <button>Добавить в корзину</button>
+      </div>
+    </div>
+
+    <!-- Секция "О нас" -->
+    <section class="about">
+      <h2>О нас</h2>
+      <p>Мы предлагаем широкий выбор качественных чехлов для всех моделей телефонов. У нас вы найдете надежную защиту и стильные аксессуары по доступным ценам!</p>
+    </section>
+  </main>
+
+  <!-- Кнопка "Наверх" -->
+  <button class="back-to-top" onclick="scrollToTop()">Наверх</button>
+
+  <!-- Футер -->
+  <footer>
+    ©️ 2024 Магазин ДОЯ. Все права защищены.
+  </footer>
+
+  <script>
+    // Показ кнопки "Наверх"
+    window.addEventListener("scroll", () => {
+      const btn = document.querySelector(".back-to-top");
+      if (window.scrollY > 200) {
+        btn.classList.add("show");
+      } else {
+        btn.classList.remove("show");
+      }
+    });
+
+    // Скролл вверх
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  </script>
+</body>
+</html>
